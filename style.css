@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: aqua;
+    font-size: 2rem;
+    border: 0.1rem solid white;
+    padding: 1rem;
+    margin: 1rem ;
+}
+body{
+    background-color:black;
+    color: #ffffff;
+    padding: 1rem;
+    
+}
+#site{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 7rem 1.6rem 1fr 1.6rem;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer"
+}
+header{
+    grid-area: header;
+    background: green;
+}
+nav{
+    grid-area: nav;
+    background:yellow;
+}
+main{
+    grid-area: main;
+    background:red;
+}
+aside{
+    grid-area:aside;
+    background: grey;
+}
+footer{
+    grid-area:footer;
+    background:purple;
+}
